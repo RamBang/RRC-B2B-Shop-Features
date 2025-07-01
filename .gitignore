@@ -1,0 +1,25 @@
+# Shopify theme files - exclude these
+assets/
+config/
+layout/
+locales/
+sections/
+snippets/
+templates/
+
+# Shopify specific files
+*.liquid
+*.css
+*.js
+*.json
+
+# Except keep our documentation
+!MINIMUM_ORDER_FEATURE_DOCUMENTATION.md
+!.gitignore
+!README.md
+
+# Other files to exclude
+*.log
+*.tmp
+.DS_Store
+Thumbs.db 
