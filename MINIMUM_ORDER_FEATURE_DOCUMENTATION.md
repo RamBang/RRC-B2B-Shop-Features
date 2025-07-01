@@ -216,10 +216,6 @@ document.addEventListener('change', function(e) {
    - Checkout button disabled server-side and client-side
    - Real-time updates when quantities change
 
-### Security Layers
-1. **Server-side**: Liquid template disables checkout button when cart total is below minimum
-2. **Client-side**: JavaScript prevents form submission for mini-cart
-3. **Real-time**: Dynamic updates when quantities change through ITG integration
 
 ### Styling
 - **Mini-Cart Warning**: Yellow background (#fff3cd), amber border (#ffeaa7), brown text (#856404)
