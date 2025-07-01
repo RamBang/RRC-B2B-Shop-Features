@@ -1,7 +1,7 @@
 # Minimum Order Amount Feature Documentation
 
 ## Overview
-This feature implements a minimum order amount restriction for B2B customers based on their company's metafield `customer.current_company.metafields.b2b.custentity_minimum_credit_limit`. The feature integrates seamlessly with ITG's existing B2B customization code without disrupting their functionality.
+This feature implements a minimum order amount restriction for B2B customers based on their company's metafield `customer.current_company.metafields.b2b.custentity_minimum_credit_limit`. The feature integrates seamlessly with existing B2B customization code without disrupting their functionality.
 
 ## Feature Behavior
 - **Mini-Cart**: Shows instant static warning message (no checkout restrictions)
@@ -227,15 +227,7 @@ document.addEventListener('change', function(e) {
 - **Responsive**: Works on all device sizes
 
 ## Dependencies
-- Requires ITG's existing B2B customization code
+- Requires existing B2B customization code
 - Requires `customer.b2b?` liquid conditional
 - Requires `customer.current_company.metafields.b2b.custentity_minimum_credit_limit` metafield
 
-## Testing Checklist
-- [ ] B2B customer with minimum order amount set
-- [ ] Cart total below minimum shows warnings in both mini-cart and main cart
-- [ ] Main cart checkout button is disabled when below minimum
-- [ ] Mini-cart allows navigation to main cart
-- [ ] Warnings disappear when cart total exceeds minimum
-- [ ] Real-time updates when quantities change
-- [ ] ITG's existing functionality remains unaffected 
